@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     const area = Math.PI * radius * 2;
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/plain");
-    res.end(`Area of circle with radius ${radius} is ${area}.\n`);
+    res.end(`Area of circle with radius ${radius} is ${area}.\n\n\nNama: Patrick Gustavo Bravy Walujan\nNIM: 20021106121\nKelas: TIK2032A\n`);
   }
 });
 
