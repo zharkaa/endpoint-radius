@@ -22,24 +22,24 @@ server.listen(3000, () => {
 });
 
 
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
+// document.querySelector("form").addEventListener("submit", function (e) {
+//   e.preventDefault();
 
-  const radius = document.querySelector("#inputBox").value;
+//   const radius = document.querySelector("#inputBox").value;
 
-  fetch(`http://localhost:3000/?radius=${radius}`)
-    .then((response) => {
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error("Something went wrong");
-      }
-    })
-    .then((data) => {
-      const resultElement = document.querySelector("#result");
-      resultElement.textContent = data;
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-});
+//   fetch(`http://localhost:3000/?radius=${radius}`)
+//     .then((response) => {
+//       if (response.ok) {
+//         return response.text();
+//       } else {
+//         throw new Error("Something went wrong");
+//       }
+//     })
+//     .then((data) => {
+//       const resultElement = document.querySelector("#result");
+//       resultElement.textContent = data;
+//     })
+//     .catch((e) => {
+//       console.log(e);
+//     });
+// });
